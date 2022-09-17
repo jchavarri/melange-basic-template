@@ -55,7 +55,7 @@ format-check: ## Checks if format is correct
 
 .PHONY: watch
 watch: ## Watch for the filesystem and rebuild on every change
-	$(DUNE) build @@default --watch
+	$(MEL) build --watch
 
 $(opam_file): $(project_name).opam.template dune-project ## Update the package dependencies when new deps are added to dune-project
 	opam exec -- dune build @install        # Update the $(project_name).opam file
