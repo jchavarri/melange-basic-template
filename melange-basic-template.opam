@@ -12,6 +12,7 @@ depends: [
   "melange" {dev}
   "melange-compiler-libs" {dev}
   "ocaml-lsp-server" {dev}
+  "dot-merlin-reader" {dev}
   "odoc" {with-doc}
 ]
 build: [

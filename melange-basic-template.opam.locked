@@ -20,6 +20,7 @@ depends: [
   "cppo" {= "1.6.9" & dev}
   "csexp" {= "1.5.1" & dev}
   "ctypes" {= "0.20.1" & dev}
+  "dot-merlin-reader" {= "4.6" & dev}
   "dune" {= "3.4.1"}
   "dune-build-info" {= "3.4.1" & dev}
   "dune-rpc" {= "3.4.1" & dev}
@@ -34,6 +35,7 @@ depends: [
   "menhirLib" {= "20220210" & dev}
   "menhirSdk" {= "20220210" & dev}
   "merlin-extend" {= "0.6.1" & dev}
+  "merlin-lib" {= "4.6-414" & dev}
   "ocaml" {= "4.14.1"}
   "ocaml-config" {= "2"}
   "ocaml-lsp-server" {= "1.13.1" & dev}
@@ -59,20 +61,5 @@ depends: [
   "xdg" {= "3.4.1" & dev}
   "yojson" {= "2.0.2" & dev}
 ]
-build: [
-  ["dune" "subst"] {dev}
-  [
-    "dune"
-    "build"
-    "-p"
-    name
-    "-j"
-    jobs
-    "--promote-install-files=false"
-    "@install"
-    "@runtest" {with-test}
-    "@doc" {with-doc}
-  ]
-  ["dune" "install" "-p" name "--create-install-files" name]
-]
+build: ["echo" "run make build"]
 dev-repo: "git+https://github.com/jchavarri/melange-basic-template.git"
