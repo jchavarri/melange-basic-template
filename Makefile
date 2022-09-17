@@ -2,7 +2,6 @@ project_name = melange-basic-template
 
 DUNE = opam exec -- dune
 MEL = opam exec -- mel
-opam_file = $(project_name).opam
 
 .DEFAULT_GOAL := help
 
@@ -30,9 +29,6 @@ install: ## Install development dependencies
 	opam install . --deps-only --with-test --locked
 	opam lock .
 
-.PHONY: deps
-deps: $(opam_file) ## Alias to update the opam file and install the needed deps
-
 .PHONY: build
 build: ## Build the project
 	$(MEL) build
@@ -56,6 +52,3 @@ format-check: ## Checks if format is correct
 .PHONY: watch
 watch: ## Watch for the filesystem and rebuild on every change
 	$(MEL) build --watch
-
-$(opam_file): $(project_name).opam.template dune-project ## Update the package dependencies when new deps are added to dune-project
-	opam exec -- dune build @install        # Update the $(project_name).opam file
