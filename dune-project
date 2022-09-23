@@ -1,4 +1,4 @@
-(lang dune 3.1)
+(lang dune 3.0)
 
 (name melange-basic-template)
 
@@ -13,6 +13,7 @@
 
 (package
  (name melange-basic-template)
+ (allow_empty)
  (synopsis "Project template for melange")
  (description
   "Template for a minimal melange project"))

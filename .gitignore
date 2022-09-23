@@ -10,3 +10,4 @@ dune
 dune.mel
 .melange.eobjs
 dist/
+*.bs.js
