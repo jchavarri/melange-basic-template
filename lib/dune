@@ -1,0 +1,5 @@
+(library
+ (name my_lib)
+ (modes melange))
+
+(dirs :standard \ node_modules)
