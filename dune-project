@@ -1,4 +1,4 @@
-(lang dune 3.0)
+(lang dune 3.1)
 
 (name melange-basic-template)
 

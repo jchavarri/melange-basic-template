@@ -8,3 +8,6 @@ _esy
 .melange.eobjs
 dist/
 *.bs.js
+dune.mel
+dune
+lib
