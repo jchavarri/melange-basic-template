@@ -1,9 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-    "name": "melange-basic-project",
+    "name": "lib2",
     "version": "0.0.1",
     "sources": {
-      "dir" : "src",
+      "dir" : ".",
       "subdirs" : true
     },
     "package-specs": {
@@ -12,8 +12,7 @@
     "suffix": ".bs.js",
     "reason": { "react-jsx": 3 },
     "bs-dependencies": [
-      "lib1",
-      "lib2"
+      "lib1"
     ],
     "warnings": {
       "error" : "+101"

@@ -1,0 +1,8 @@
+(include_subdirs unqualified)
+
+(library
+ (name lib2)
+ (wrapped false)
+ (libraries lib1)
+ (modes melange))
+

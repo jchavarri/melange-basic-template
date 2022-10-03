@@ -1,7 +1,1 @@
-(include_subdirs unqualified)
-
-(library
- (name main)
- (modes melange))
-
-(dirs src)
+(dirs :standard \ node_modules js lib)

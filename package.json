@@ -1,4 +1,6 @@
 {
+  "private": true,
+  "workspaces": ["src", "lib1", "lib2"],
   "scripts": {
     "build": "esy",
     "build:watch": "esy && esy build:watch",
