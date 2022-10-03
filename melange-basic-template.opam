@@ -20,7 +20,7 @@ build: [
 ]
 dev-repo: "git+https://github.com/jchavarri/melange-basic-template.git"
 pin-depends: [
-  [ "dune.dev" "git+https://github.com/jchavarri/dune.git#01431d57f90704ebb49b0dba002d0712f984b52b" ]
+  [ "dune.dev" "git+https://github.com/jchavarri/dune.git#bd444e63e7f34e9ce89c97eac893032de4444dc1" ]
   [ "melange.dev" "git+https://github.com/melange-re/melange.git#d97908651f5798855ff61922f1f9ca9513bc1f42" ]
   [ "melange-compiler-libs.dev" "git+https://github.com/melange-re/melange-compiler-libs.git#029354b208335c6aafb3c483ef425c3a4afd1dc1" ]
 ]
