@@ -62,7 +62,9 @@ clean: clean-melange clean-rescript clean-dune ## Clean build artifacts and othe
 .PHONY: start-benchmark
 start-benchmark: clean ## Benchmark builds with three setups 
 	time $(MAKE) build-rescript
+	make clean
 	time $(MAKE) build-dune
+	make clean
 	time $(MAKE) build-melange
 
 .PHONY: format
