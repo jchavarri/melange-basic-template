@@ -21,7 +21,7 @@ depends: [
   "csexp" {= "1.5.1" & dev}
   "ctypes" {= "0.20.1" & dev}
   "dot-merlin-reader" {= "4.6" & dev}
-  "dune" {= "3.4.1"}
+  "dune" {= "dev" & dev}
   "dune-build-info" {= "3.4.1" & dev}
   "dune-rpc" {= "3.4.1" & dev}
   "dyn" {= "3.4.1" & dev}
@@ -36,10 +36,11 @@ depends: [
   "menhirSdk" {= "20220210" & dev}
   "merlin-extend" {= "0.6.1" & dev}
   "merlin-lib" {= "4.6-414" & dev}
-  "ocaml" {= "4.14.1"}
+  "ocaml" {= "4.14.0"}
+  "ocaml-base-compiler" {= "4.14.0"}
   "ocaml-config" {= "2"}
   "ocaml-lsp-server" {= "1.13.1" & dev}
-  "ocaml-variants" {= "4.14.1+trunk"}
+  "ocaml-options-vanilla" {= "1"}
   "ocamlbuild" {= "0.14.1" & dev}
   "ocamlfind" {= "1.9.5" & dev}
   "ocamlformat-rpc-lib" {= "0.24.1" & dev}

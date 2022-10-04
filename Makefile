@@ -27,6 +27,7 @@ pins: ## Pin development dependencies
 install: ## Install development dependencies
 	opam install . --deps-only --with-test --locked
 	opam lock .
+	mkdir -p node_modules/melange && ln -sfn $$(opam var prefix)/lib/melange node_modules/melange/lib
 
 .PHONY: build
 build: ## Build the project

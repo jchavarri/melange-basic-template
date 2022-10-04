@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "build": "esy",
-    "build:watch": "esy && esy build:watch",
-    "bundle": "webpack --mode production --entry ./_build/default/src/ReactApp.bs.js",
-    "serve": "webpack serve --open --mode development --entry ./_build/default/src/ReactApp.bs.js"
+    "bundle": "webpack --mode production --entry ./_build/default/src/.main.objs/byte/main.js",
+    "serve": "webpack serve --open --mode development --entry ./_build/default/src/.main.objs/byte/main.js",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "react": "^18.1.0",
