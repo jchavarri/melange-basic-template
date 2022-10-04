@@ -1,7 +1,6 @@
 project_name = melange-basic-template
 
 DUNE = opam exec -- dune
-MEL = opam exec -- mel
 
 .DEFAULT_GOAL := help
 
@@ -31,7 +30,7 @@ install: ## Install development dependencies
 
 .PHONY: build
 build: ## Build the project
-	$(MEL) build
+	$(DUNE) build
 
 .PHONY: start
 start: ## Serve the application with a local HTTP server
@@ -39,7 +38,7 @@ start: ## Serve the application with a local HTTP server
 
 .PHONY: clean
 clean: ## Clean build artifacts and other generated files
-	$(MEL) clean
+	$(DUNE) clean
 
 .PHONY: format
 format: ## Format the codebase with ocamlformat
@@ -51,4 +50,4 @@ format-check: ## Checks if format is correct
 
 .PHONY: watch
 watch: ## Watch for the filesystem and rebuild on every change
-	$(MEL) build --watch
+	$(DUNE) build --watch

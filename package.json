@@ -6,11 +6,13 @@
     "serve": "webpack serve --open --mode development --entry ./_build/default/src/ReactApp.bs.js"
   },
   "dependencies": {
-    "@rescript/react": "^0.10.3",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "reason-react": "^0.9.1"
   },
   "devDependencies": {
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.1"

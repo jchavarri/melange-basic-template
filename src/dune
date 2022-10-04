@@ -1,6 +1,4 @@
 (library
  (name main)
  (modes melange)
- (libraries my_lib2))
-
-(dirs :standard \ node_modules)
+ (libraries reason_react my_lib2))
