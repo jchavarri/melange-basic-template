@@ -1,3 +1,11 @@
+(subdir
+ node_modules
+ (dirs reason-react)
+ (subdir
+  reason-react
+  (dirs src)))
+
 (env
  (_
-  (flags (:standard -w +a-4-20-29-40-41-42-44-45-48-58-59-60-61-63..70-102-103))))
+  (flags
+   (:standard -w +a-4-20-29-40-41-42-44-45-48-58-59-60-61-63..70-102-103))))
