@@ -5,11 +5,11 @@ A simple project template using [Melange](https://github.com/melange-re/melange)
 ## Quick Start
 
 ```shell
-npm install
+make init
 
 # In separate terminals:
-npm run build:watch
-npm run serve
+make watch
+yarn serve
 ```
 
 ### React
