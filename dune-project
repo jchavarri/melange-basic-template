@@ -1,4 +1,6 @@
-(lang dune 3.0)
+(lang dune 3.5)
+
+(using melange 0.1)
 
 (name melange-basic-template)
 
@@ -15,5 +17,4 @@
  (name melange-basic-template)
  (allow_empty)
  (synopsis "Project template for melange")
- (description
-  "Template for a minimal melange project"))
+ (description "Template for a minimal melange project"))
