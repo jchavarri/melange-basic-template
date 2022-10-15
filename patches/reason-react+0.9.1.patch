@@ -1,16 +1,11 @@
 diff --git a/node_modules/reason-react/src/dune b/node_modules/reason-react/src/dune
 new file mode 100644
-index 0000000..d32ede1
+index 0000000..8f05658
 --- /dev/null
 +++ b/node_modules/reason-react/src/dune
-@@ -0,0 +1,10 @@
+@@ -0,0 +1,5 @@
 +(include_subdirs unqualified)
-+
-+(env
-+ (_
-+  (flags (:standard -w +a-4-9-20-27-29-32-40-41-42-44-45-48-58-59-60-61-63..70-102-103))))
 +
 +(library
 + (name reason_react)
-+ (modes melange)
-+)
++ (modes melange))

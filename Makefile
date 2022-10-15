@@ -33,6 +33,10 @@ install: ## Install development dependencies
 build: ## Build the project
 	$(DUNE) build src/.main.objs/melange/main.js
 
+.PHONY: build
+build_verbose: ## Build the project
+	$(DUNE) build --verbose src/.main.objs/melange/main.js
+
 .PHONY: start
 start: ## Serve the application with a local HTTP server
 	yarn server
