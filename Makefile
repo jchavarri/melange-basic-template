@@ -33,7 +33,7 @@ install: ## Install development dependencies
 build: ## Build the project
 	$(DUNE) build src/.main.objs/melange/main.js
 
-.PHONY: build
+.PHONY: build_verbose
 build_verbose: ## Build the project
 	$(DUNE) build --verbose src/.main.objs/melange/main.js
 
