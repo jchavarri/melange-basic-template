@@ -40,7 +40,7 @@ depends: [
   "ocaml-config" {= "2"}
   "ocaml-lsp-server" {= "1.13.1" & dev}
   "ocaml-variants" {= "4.14.1+trunk"}
-  "ocamlbuild" {= "0.14.1" & dev}
+  "ocamlbuild" {= "0.14.2" & dev}
   "ocamlfind" {= "1.9.5" & dev}
   "ocamlformat-rpc-lib" {= "0.24.1" & dev}
   "octavius" {= "1.2.2" & dev}
@@ -63,3 +63,7 @@ depends: [
 ]
 build: ["echo" "run make build"]
 dev-repo: "git+https://github.com/jchavarri/melange-basic-template.git"
+pin-depends: [
+  "dune.3.4.1"
+  "git+https://github.com/ocaml/dune.git#af856aa23a6afb9963acf20cd8823e6cb6c8f228"
+]
