@@ -19,5 +19,5 @@ build: [
 ]
 dev-repo: "git+https://github.com/jchavarri/melange-basic-template.git"
 pin-depends: [
-  [ "melange.dev" "git+https://github.com/melange-re/melange.git#2f561d73268e2ec64844fa9f03e88a8727b23b48" ]
+  [ "melange.dev" "git+https://github.com/melange-re/melange.git#bc7549a32516a9d1be6d307f2cb1bf6a3acfd6dd" ]
 ]

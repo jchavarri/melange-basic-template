@@ -22,9 +22,10 @@ init: create-switch install ## Configure everything to develop this repository i
 
 .PHONY: install
 install: ## Install development dependencies
-	opam install . --deps-only --with-test
-	opam pin add $(project_name).dev .
+	opam install -y . --deps-only --with-test
+	opam pin -y add $(project_name).dev .
 	opam lock .
+	rm -rf node_modules/melange && ln -sfn $$(opam var melange:lib)/runtime node_modules/melange
 
 .PHONY: build
 build: ## Build the project
@@ -33,6 +34,10 @@ build: ## Build the project
 .PHONY: start
 start: ## Serve the application with a local HTTP server
 	yarn server
+
+.PHONY: bundle
+bundle: ## Bundle the JavaScript application
+	yarn bundle
 
 .PHONY: clean
 clean: ## Clean build artifacts and other generated files
