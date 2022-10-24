@@ -24,7 +24,6 @@ install: ## Install development dependencies
 	npm install
 	opam install -y . --deps-only --with-test
 	opam pin -y add $(project_name).dev .
-	opam lock .
 	rm -rf node_modules/melange && ln -sfn $$(opam var melange:lib)/runtime node_modules/melange
 
 .PHONY: build
