@@ -18,10 +18,10 @@ create-switch:
 
 .PHONY: init
 init: create-switch install ## Configure everything to develop this repository in local
-	yarn
 
 .PHONY: install
 install: ## Install development dependencies
+	npm install
 	opam install -y . --deps-only --with-test
 	opam pin -y add $(project_name).dev .
 	opam lock .
@@ -33,11 +33,11 @@ build: ## Build the project
 
 .PHONY: start
 start: ## Serve the application with a local HTTP server
-	yarn server
+	npm run server
 
 .PHONY: bundle
 bundle: ## Bundle the JavaScript application
-	yarn bundle
+	npm run bundle
 
 .PHONY: clean
 clean: ## Clean build artifacts and other generated files
