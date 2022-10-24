@@ -5,11 +5,11 @@ A simple project template using [Melange](https://github.com/melange-re/melange)
 ## Quick Start
 
 ```shell
-npm install
+make init
 
 # In separate terminals:
-npm run build:watch
-npm run serve
+make watch
+make serve
 ```
 
 ### React
@@ -20,15 +20,15 @@ point of the sample React app is [`src/ReactApp.re`](src/ReactApp.re).
 
 ## Commands
 
-- `npm install` - installs the npm/JavaScript dependencies, including the `esy`
-  package manager (see below)
-- `npm run build:watch` - uses `esy` to:
-  - Install OCaml-based dependencies (e.g. OCaml and Melange)
-  - Symlink Melange's JavaScript runtime into `node_modules/melange`, so that
-    JavaScript bundlers like Webpack can find the files when they're imported
-  - Compile the project's ReasonML/OCaml/ReScript source files to JavaScript
-  - Rebuild files when changed (via Melange's built-in watch mode)
-- `npm run serve` - starts a dev server to serve the frontend app
+You can see all available commands by running `make help` or just `make`. Here
+are a few of the most useful ones:
+
+- `make init`: set up opam switch and download OCaml, Melange and JavaScript
+dependencies
+- `make install`: install OCaml, Melange and JavaScript dependencies
+- `make watch`: watch for the filesystem and have Melange rebuild on every
+change
+- `make serve`: serve the application with a local HTTP server
 
 ## JavaScript output
 

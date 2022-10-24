@@ -13,7 +13,7 @@ help: ## Print this help message
 	@echo "";
 
 .PHONY: create-switch
-create-switch:
+create-switch: ## Create opam switch
 	opam switch create . --deps-only --locked
 
 .PHONY: init
@@ -31,8 +31,8 @@ install: ## Install development dependencies
 build: ## Build the project
 	$(MEL) build
 
-.PHONY: start
-start: ## Serve the application with a local HTTP server
+.PHONY: serve
+serve: ## Serve the application with a local HTTP server
 	npm run server
 
 .PHONY: bundle
