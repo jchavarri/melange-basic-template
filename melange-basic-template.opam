@@ -7,7 +7,7 @@ license: "MIT"
 homepage: "https://github.com/jchavarri/melange-basic-template"
 bug-reports: "https://github.com/jchavarri/melange-basic-template/issues"
 depends: [
-  "ocaml" {>= "4.14.1" & < "5.0.0"}
+  "ocaml" {>= "4.14.0" & < "5.0.0"}
   "dune" {>= "3.5"}
   "melange" {dev}
   "ocaml-lsp-server" {dev}
